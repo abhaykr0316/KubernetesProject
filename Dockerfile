@@ -9,4 +9,4 @@ RUN unzip 2154_split_portfolio.zip
 RUN cp -rvf 2154_split_portfolio/* .
 RUN rm -rf 2154_split_portfolio.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 80
+EXPOSE 80 22
