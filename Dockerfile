@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:stream9
 RUN yum install -y httpd \ 
     zip\
     unzip
