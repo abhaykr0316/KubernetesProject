@@ -1,5 +1,5 @@
-FROM centos:stream9
-RUN yum install -y httpd \ 
+FROM rockylinux:9
+RUN dnf install -y httpd \ 
     zip\
     unzip
 ADD https://www.tooplate.com/zip-templates/2154_split_portfolio.zip /var/www/html
