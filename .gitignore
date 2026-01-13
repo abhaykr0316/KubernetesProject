@@ -1,0 +1,86 @@
+#################################
+# OS / Editor files
+#################################
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+#################################
+# Logs
+#################################
+*.log
+logs/
+*.out
+
+#################################
+# Secrets / Keys (VERY IMPORTANT)
+#################################
+.env
+*.env
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+authorized_keys
+vault_pass.txt
+
+#################################
+# Docker
+#################################
+docker-compose.override.yml
+*.tar
+*.img
+.docker/
+docker-data/
+
+#################################
+# Ansible
+#################################
+*.retry
+inventory.ini
+hosts
+ansible.cfg
+roles/*/files/*
+roles/*/vars/*
+roles/*/defaults/*
+!roles/*/tasks/
+!roles/*/handlers/
+!roles/*/templates/
+
+#################################
+# Kubernetes
+#################################
+*.kubeconfig
+kubeconfig
+.kube/
+*.crt
+*.key
+*.p12
+secrets.yaml
+*secret*.yaml
+
+#################################
+# Build artifacts
+#################################
+dist/
+build/
+target/
+*.jar
+*.war
+
+#################################
+# Jenkins
+#################################
+workspace/
+jenkins_home/
+
+#################################
+# Terraform (optional but common)
+#################################
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
