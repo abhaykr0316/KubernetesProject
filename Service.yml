@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service                 # Defines a Service type object
+metadata:
+  name: webapp
+  labels:
+    app: webapp
+spec:
+  ports:
+    - port: 8080              # Port exposed by the Service for containers
+      targetPort: 80          # Port on which the container is running
+      nodePort: 31200         # Port on each Node to expose the Service
+  selector:
+    app: webapp               # Selects Pods with label app:webapp
+  type: LoadBalancer          # Service type to expose externally
